@@ -25,7 +25,7 @@ class _BottomLoginPageState extends State<BottomLoginPage> {
         decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(5),
             border: Border.fromBorderSide(
-                BorderSide(color: AppTheme.colors.button))),
+                BorderSide(color: AppTheme.colors.sociallogin))),
         child: Row(
           children: [
             SizedBox(
@@ -36,14 +36,14 @@ class _BottomLoginPageState extends State<BottomLoginPage> {
             Container(
               width: 1,
               height: 56,
-              color: AppTheme.colors.button,
+              color: AppTheme.colors.sociallogin,
             ),
             SizedBox(
               height: 56,
               child: Center(
                 child: Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 25),
-                  child: Text(widget.label, style: AppTheme.textStyles.button),
+                  child: Text(widget.label, style: AppTheme.textStyles.sociallogin),
                 ),
               ),
             )

@@ -31,11 +31,11 @@ class _SplashPageState extends State<SplashPage> {
                   child: Text.rich(
                     TextSpan(
                         text: "POP",
-                        style: AppTheme.textStyles.titleEventSplit,
+                        style: AppTheme.textStyles.textSplashPage1,
                         children: [
                           TextSpan(
                               text: ".Quiz",
-                              style: AppTheme.textStyles.titleAppBar)
+                              style: AppTheme.textStyles.textSplashPage2)
                         ]),
                   ),
                 ),

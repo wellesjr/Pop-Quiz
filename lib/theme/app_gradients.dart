@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 
 abstract class AppGradients {
   Gradient get backgroundSplasPage;
-  Gradient get credito;
-  Gradient get debito;
+  // Gradient get credito;
+  // Gradient get debito;
 }
 
 class AppGradientsDefault implements AppGradients {
@@ -14,15 +14,15 @@ class AppGradientsDefault implements AppGradients {
       stops: [0.0, 0.695],
       transform: GradientRotation(2.13959913 * pi));
 
-  @override
-  Gradient get credito => RadialGradient(colors: [
-        const Color(0xFF45CC93).withOpacity(0.12),
-        const Color(0xFF40B28C).withOpacity(0.12)
-      ], transform: const GradientRotation(4.5 * pi));
+    // @override
+    // Gradient get credito => RadialGradient(colors: [
+    //       const Color(0xFF45CC93).withOpacity(0.12),
+    //       const Color(0xFF40B28C).withOpacity(0.12)
+    //     ], transform: const GradientRotation(4.5 * pi));
 
-  @override
-  Gradient get debito => RadialGradient(colors: [
-        const Color(0xFFE83F5B).withOpacity(0.12),
-        const Color(0xFFE83F5B).withOpacity(0.12)
-      ], transform: const GradientRotation(4.5 * pi));
+    // @override
+    // Gradient get debito => RadialGradient(colors: [
+    //       const Color(0xFFE83F5B).withOpacity(0.12),
+    //       const Color(0xFFE83F5B).withOpacity(0.12)
+    //     ], transform: const GradientRotation(4.5 * pi));
 }

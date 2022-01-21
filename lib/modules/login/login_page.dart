@@ -3,7 +3,6 @@ import 'package:popquiz/modules/login/controllers/login_controller.dart';
 import 'package:popquiz/modules/login/controllers/login_service.dart';
 import 'package:popquiz/modules/login/controllers/login_state.dart';
 import 'package:popquiz/modules/login/widgets/botton_login_widget.dart';
-
 import 'package:popquiz/theme/app_theme.dart';
 
 class LoginPage extends StatefulWidget {
@@ -35,7 +34,7 @@ class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppTheme.colors.backgroundPrimary,
+      backgroundColor: AppTheme.colors.background,
       body: SafeArea(
         bottom: true,
         child:
@@ -49,7 +48,7 @@ class _LoginPageState extends State<LoginPage> {
                   Expanded(
                     child: Center(
                         child: Text("Está Preparado?",
-                            style: AppTheme.textStyles.title)),
+                            style: AppTheme.textStyles.titleLoginPage)),
                   ),
                 ],
               ),
@@ -66,7 +65,7 @@ class _LoginPageState extends State<LoginPage> {
                     Expanded(
                       child: Text(
                           "Faça seu login com sua conta google e aceite o desafio!",
-                          style: AppTheme.textStyles.buttontitle),
+                          style: AppTheme.textStyles.titleLoginPage2),
                     ),
                   ],
                 ),
