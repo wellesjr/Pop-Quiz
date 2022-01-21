@@ -1,0 +1,35 @@
+name: popquiz
+description: Technical challenge CHECKMOB
+
+publish_to: "none"
+version: 1.0.0+1
+environment:
+  sdk: ">=2.15.1 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.2
+
+  #Animação
+  animated_card: ^2.0.0
+
+  #Fontes
+  google_fonts: ^2.1.0
+
+  #Firebase
+  firebase_core: ^1.11.0
+
+  #Social Login
+  google_sign_in: ^5.2.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^1.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
