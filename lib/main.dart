@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:popquiz/modules/login/login_page.dart';
 import 'package:popquiz/modules/splash/splash_page.dart';
-import 'package:popquiz/theme/app_theme.dart';
 
 void main() {
   runApp(const MyApp());
