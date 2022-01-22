@@ -27,6 +27,8 @@ dependencies:
   #Ajuda nos testes
   mocktail: ^0.2.0
 
+  share_plus: ^2.0.1
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -36,3 +38,4 @@ flutter:
   uses-material-design: true
   assets:
     - assets/images/
+    - assets/database/

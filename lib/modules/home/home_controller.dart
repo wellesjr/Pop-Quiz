@@ -1,34 +1,22 @@
+import 'package:flutter/material.dart';
 import 'package:popquiz/modules/home/home_state.dart';
 import 'package:popquiz/modules/home/repositories/home_repository.dart';
-import 'package:popquiz/modules/home/repositories/home_repository_mock.dart';
+import 'package:popquiz/modules/models/quiz/quiz_model.dart';
 
 class HomeController {
-  late HomeRepository repository;
-  Function(HomeState state)? onlisten;
+  ValueNotifier<HomeState> stateNotifier =
+      ValueNotifier<HomeState>(HomeState.empty);
+  set state(HomeState state) => stateNotifier.value = state;
+  HomeState get state => stateNotifier.value;
 
-  HomeState state = HomeStateEmpty();
+  List<QuizModel>? quizzes;
 
-  HomeController({HomeRepository? repository}) {
-    this.repository = repository ?? HomeRepositoryMock();
-  }
-  getEvents() async {
-    update(HomeStateLoading());
-    try {
-      final response = await repository.getEvents();
-      update(HomeStateSuccess(events: response));
-    } catch (e) {
-      update(HomeStateFailure(message: e.toString()));
-    }
-  }
+  final repository = HomeRepository();
 
-  void update(HomeState state) {
-    this.state = state;
-    if (onlisten != null) {
-      onlisten!(state);
-    }
-  }
-
-  void listen(Function(HomeState state) onChange) {
-    onlisten = onChange;
+  void getQuizzes() async {
+    state = HomeState.loading;
+    await Future.delayed(const Duration(seconds: 2));
+    quizzes = await repository.getQuizzes();
+    state = HomeState.success;
   }
 }

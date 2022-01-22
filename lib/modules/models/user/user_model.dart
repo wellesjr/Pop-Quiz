@@ -1,3 +1,4 @@
+import 'dart:convert';
 import 'package:google_sign_in/google_sign_in.dart';
 
 class UserModel {
@@ -5,12 +6,14 @@ class UserModel {
   final String email;
   final String id;
   final String? photoUrl;
+  final double score;
 
   UserModel({
     this.name,
     required this.email,
     required this.id,
-    this.photoUrl,
+    required this.photoUrl,
+    this.score = 0,
   });
 
   factory UserModel.google(GoogleSignInAccount account) {

@@ -64,8 +64,9 @@ class _LoginPageState extends State<LoginPage> {
                     const SizedBox(width: 25),
                     Expanded(
                       child: Text(
-                          "Faça seu login com sua conta google e aceite o desafio!",
-                          style: AppTheme.textStyles.titleLoginPage2),
+                          "Faça o login com sua conta google e aceite o desafio!",
+                          style: AppTheme.textStyles.titleLoginPage2,
+                          textAlign: TextAlign.justify),
                     ),
                   ],
                 ),

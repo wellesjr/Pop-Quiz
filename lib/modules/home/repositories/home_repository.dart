@@ -1,8 +1,13 @@
-import 'package:popquiz/modules/home/modules/event_model.dart';
-import 'package:popquiz/modules/home/widgets/appbar/dashdboard_model.dart';
+import 'dart:convert';
+import 'package:flutter/services.dart';
+import 'package:popquiz/modules/models/quiz/quiz_model.dart';
 
-abstract class HomeRepository{
-  Future<List<EventModel>> getEvents();
-  Future<DashdboardModel> getDashdboard();
+class HomeRepository {
+  Future<List<QuizModel>> getQuizzes() async {
+    final response =
+        await rootBundle.loadString('assets/database/quizzes.json');
+    final list = jsonDecode(response) as List;
+    final quizzes = list.map((e) => QuizModel.fromMap(e)).toList();
+    return quizzes;
+  }
 }
-
