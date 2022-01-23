@@ -32,7 +32,7 @@ class _HomePageState extends State<HomePage> {
     final size = MediaQuery.of(context).size;
     final UserModel user =
         ModalRoute.of(context)!.settings.arguments as UserModel;
-    print.call(user.photoUrl);
+    print.call(user.email);
     if (controller.state == HomeState.success) {
       return Scaffold(
         appBar: AppbarHomepage(

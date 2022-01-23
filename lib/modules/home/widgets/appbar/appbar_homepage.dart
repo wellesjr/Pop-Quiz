@@ -54,7 +54,7 @@ class AppbarHomepage extends PreferredSize {
                                           children: [
                                             Expanded(
                                               child: Text(
-                                                user.name!.toLowerCase(),
+                                                user.name!.toUpperCase(),
                                                 style: AppTheme
                                                     .textStyles.nameAppBar,
                                               ),
