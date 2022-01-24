@@ -76,7 +76,7 @@ class AppbarHomepage extends PreferredSize {
               ),
               const Align(
                 alignment: Alignment(0.0, 0.8),
-                child: ScoreCardWidget(percent: 100),
+                child: ScoreCardWidget(percent: 1),
               ),
             ],
           ),

@@ -3,8 +3,9 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:popquiz/theme/app_theme.dart';
 
 class HistoricButton extends StatelessWidget {
+  final VoidCallback onTap;
   final String label;
-  HistoricButton({Key? key, required this.label})
+  HistoricButton({Key? key, required this.label, required this.onTap})
       : assert(['Ultimo Quiz', 'Historico de resposta'].contains(label)),
         super(key: key);
 
@@ -33,13 +34,16 @@ class HistoricButton extends StatelessWidget {
         border: Border.fromBorderSide(BorderSide(color: borderColor)),
         borderRadius: BorderRadius.circular(28),
       ),
-      child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 26, vertical: 6),
-        child: Text(
-          label,
-          style: GoogleFonts.notoSans(
-            color: fontColor,
-            fontSize: 13,
+      child: InkWell(
+        onTap: onTap,
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 26, vertical: 6),
+          child: Text(
+            label,
+            style: GoogleFonts.notoSans(
+              color: fontColor,
+              fontSize: 13,
+            ),
           ),
         ),
       ),

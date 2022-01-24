@@ -32,7 +32,7 @@ class _HomePageState extends State<HomePage> {
     final size = MediaQuery.of(context).size;
     final UserModel user =
         ModalRoute.of(context)!.settings.arguments as UserModel;
-    print.call(user.email);
+    print.call(user.photoUrl);
     if (controller.state == HomeState.success) {
       return Scaffold(
         appBar: AppbarHomepage(
@@ -49,9 +49,17 @@ class _HomePageState extends State<HomePage> {
                   scrollDirection: Axis.horizontal,
                   shrinkWrap: true,
                   children: [
-                    HistoricButton(label: "Historico de resposta"),
+                    HistoricButton(
+                      label: "Historico de resposta",
+                      onTap: () {
+                        print.call("Cricou");
+                      },
+                    ),
                     const SizedBox(width: 10),
-                    HistoricButton(label: "Ultimo Quiz")
+                    HistoricButton(
+                      label: "Ultimo Quiz",
+                      onTap: () {},
+                    )
                   ],
                 ),
               ),

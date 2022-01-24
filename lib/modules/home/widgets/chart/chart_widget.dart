@@ -43,11 +43,10 @@ class _ChartWidgetState extends State<ChartWidget>
                 width: 80,
                 child: CircularProgressIndicator(
                   strokeWidth: 10,
-                  value: 50,
-                  //_animation.value,
-                  backgroundColor: AppTheme.colors.animatorSegundary,
+                  value: _animation.value,
+                  backgroundColor: AppTheme.colors.progressIndicatorPrimary,
                   valueColor: AlwaysStoppedAnimation<Color>(
-                      AppTheme.colors.animatorPrimary),
+                      AppTheme.colors.progressIndicatorSecundary),
                 ),
               ),
             ),
