@@ -38,13 +38,12 @@ class QuizCardWidget extends StatelessWidget {
               width: 40,
               child: Image.asset(image),
             ),
-            const SizedBox(height: 14),
+            const SizedBox(height: 12),
             Text(title, style: AppTheme.textStyles.titleQuiz),
-            const SizedBox(height: 14),
+            const SizedBox(height: 11),
             Row(
               children: [
                 Expanded(
-                  
                   flex: 1,
                   child: Text(completed,
                       style: AppTheme.textStyles.progressQuizCard),

@@ -73,6 +73,12 @@ abstract class AppColorsBase {
 ////----------------------------
   Color get progressIndicatorPrimary;
   Color get progressIndicatorSecundary;
+////--------------------------------------------------------
+//Colors Result Page
+////--------------------------------------------------------
+  Color get titleResultPage;
+  Color get subtitleResultPage;
+  Color get subtitleResultPage2;
 }
 
 class AppColorsDefault implements AppColorsBase {
@@ -190,42 +196,14 @@ class AppColorsDefault implements AppColorsBase {
   Color get progressIndicatorPrimary => const Color(0xffcccccc);
   @override
   Color get progressIndicatorSecundary => const Color(0xFFFF9E1B);
-  // @override
-  // Color get cardhomemoney => const Color(0xFF666666);
-  // @override
-  // Color get cardhomepeople => const Color(0xFFA4B2AE);
-  // @override
-  // Color get cardhomesubtitle => const Color(0xFF666666);
-  // @override
-  // Color get cardhometitle => const Color(0xFF455250);
-  // @override
-  // Color get stepperIndicatorPrimary => const Color(0xFF3CAB82);
-  // @override
-  // Color get stepperIndicatorSegundary => const Color(0xFF666666);
-  // @override
-  // Color get stepperNextButton => const Color(0xFF455250);
-  // @override
-  // Color get stepperSubitle => const Color(0xFF455250);
-  // @override
-  // Color get stepperTitle => const Color(0xFF455250);
-  // @override
-  // Color get hintTextField => const Color(0xFF666666);
-  // @override
-  // Color get textField => const Color(0xFF455250);
-  // @override
-  // Color get stepperNextButtonDisabled => const Color(0xFF666666);
-  // @override
-  // Color get bottomAddWidget => const Color(0xFF40B28C);
-  // @override
-  // Color get titleEventSplit => const Color(0xFF455250);
-  // @override
-  // Color get menuSplitEvent => const Color(0xFF666666);
-  // @override
-  // Color get divider => const Color(0xFFC1C1C1);
-  // @override
-  // Color get valueEventSplit => const Color(0xFF40B28C);
-  // @override
-  // Color get valuefaltante => const Color(0xFFE83F5B);
-  // @override
-  // Color get itenEvenSplit => const Color(0xFF455250);
+
+////-------------------------------------------------------
+// Colors Result Page
+////-------------------------------------------------------
+  @override
+  Color get titleResultPage => const Color(0xFF000000);
+  @override
+  Color get subtitleResultPage => const Color(0xFF6E6680);
+  @override
+  Color get subtitleResultPage2 => const Color(0xFF6E6680);
 }

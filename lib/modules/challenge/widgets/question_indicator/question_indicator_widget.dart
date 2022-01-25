@@ -24,7 +24,7 @@ class QuestionIndicatorWidget extends StatelessWidget {
               Text('Questão $currentPage',
                   style: AppTheme.textStyles.textQuestionIndicator),
               Text('de $length',
-                  style: AppTheme.textStyles.textQuestionIndicator),
+                  style: AppTheme.textStyles.textQuestionIndicator1),
             ],
           ),
           const SizedBox(height: 16),

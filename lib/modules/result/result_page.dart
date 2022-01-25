@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:popquiz/modules/challenge/widgets/next_button/next_button_widget.dart';
+import 'package:popquiz/theme/app_theme.dart';
 import 'package:share_plus/share_plus.dart';
 
 class ResultPage extends StatelessWidget {
@@ -24,27 +25,26 @@ class ResultPage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            //Image.asset(AppImages.trophy),
+            Image.asset(AppTheme.images.trophy),
             Column(
               children: [
-                const Text(
-                  'Congrats!',
-                  textAlign: TextAlign.center,
-                  //    style: AppTextStyles.heading40,
-                ),
                 const SizedBox(height: 16),
                 Text.rich(
                   TextSpan(
-                    text: 'You found',
-                    //style: AppTextStyles.body,
+                    text: 'Parabéns!',
+                    style: AppTheme.textStyles.titleResultPage,
                     children: [
                       TextSpan(
-                        text: '\n$title',
-                        // style: AppTextStyles.bodyBold,
+                        text: '\n\n\nVocê concluiu o desafio ',
+                        style: AppTheme.textStyles.subtitleResultPage2,
                       ),
                       TextSpan(
-                        text: '\nwith $result out of $length hits.',
-                        //style: AppTextStyles.body,
+                        text: '\n$title',
+                        style: AppTheme.textStyles.subtitleResultPage,
+                      ),
+                      TextSpan(
+                        text: '\nVocê acertou $result de $length perguntas.',
+                        style: AppTheme.textStyles.subtitleResultPage2,
                       ),
                     ],
                   ),

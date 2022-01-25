@@ -31,6 +31,7 @@ abstract class AppTextStyles {
 //Styles fonts Question Indicator
 ////-----------------------------------
   TextStyle get textQuestionIndicator;
+  TextStyle get textQuestionIndicator1;
 ////-----------------------------------
 //Styles fonts Answers
 ////-----------------------------------
@@ -42,6 +43,12 @@ abstract class AppTextStyles {
 ////-----------------------------------
   TextStyle get titleQuiz;
   TextStyle get progressQuizCard;
+////-----------------------------------
+//Styles fonts Result Page
+////-----------------------------------
+  TextStyle get titleResultPage;
+  TextStyle get subtitleResultPage;
+  TextStyle get subtitleResultPage2;
 }
 
 class AppTextStylesDefault implements AppTextStyles {
@@ -118,6 +125,11 @@ class AppTextStylesDefault implements AppTextStyles {
       color: AppTheme.colors.questionIndicator,
       fontSize: 13,
       fontWeight: FontWeight.normal);
+  @override
+  TextStyle get textQuestionIndicator1 => GoogleFonts.notoSans(
+      color: AppTheme.colors.questionIndicator,
+      fontSize: 13,
+      fontWeight: FontWeight.w900);
 ////------------------------------------------------------------------------------
 //Styles fonts Answer
 ////------------------------------------------------------------------------------
@@ -149,4 +161,22 @@ class AppTextStylesDefault implements AppTextStyles {
       color: AppTheme.colors.titleQuiz,
       fontSize: 11,
       fontWeight: FontWeight.w400);
+////------------------------------------------------------------------------------
+//Styles fonts Result Page
+////------------------------------------------------------------------------------
+  @override
+  TextStyle get subtitleResultPage => GoogleFonts.notoSans(
+      color: AppTheme.colors.subtitleResultPage,
+      fontSize: 22,
+      fontWeight: FontWeight.w800);
+  @override
+  TextStyle get subtitleResultPage2 => GoogleFonts.notoSans(
+      color: AppTheme.colors.subtitleResultPage2,
+      fontSize: 16,
+      fontWeight: FontWeight.w400);
+  @override
+  TextStyle get titleResultPage => GoogleFonts.notoSans(
+      color: AppTheme.colors.titleResultPage,
+      fontSize: 40,
+      fontWeight: FontWeight.w700);
 }

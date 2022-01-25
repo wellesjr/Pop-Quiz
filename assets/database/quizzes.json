@@ -1,26 +1,98 @@
 [
     {
-        "title": "Flutter in NLW",
+        "title": "Conhecimentos Gerais",
         "image": "assets/images/blocks.png",
         "questionAnswered": 0,
         "level": "easy",
         "questions": [
             {
-                "title": "Did you like Next Level Week?",
+                "title": "Normalmente, quantos litros de sangue uma pessoa tem? Em média, quantos são retirados numa doação de sangue?",
                 "answers": [
-                    {"title": "Liked it"},
-                    {"title": "Hm... yes..."},
-                    {"title": "It was Amazing"},
-                    {"title": "Sensational, great week and Project", "isRight": true}
+                    {"title": "Tem entre 2 a 4 litros. São retirados 450 mililitros"},
+                    {"title": "Tem entre 4 a 6 litros. São retirados 450 mililitros", "isRight": true},
+                    {"title": "Tem 10 litros. São retirados 2 litros"},
+                    {"title": "Tem 7 litros. São retirados 1,5 litros"}
                 ]
             },
             {
-                "title": "Did you like Flutter and Dart?",
+                "title": "De quem é a famosa frase “Penso, logo existo”?",
                 "answers": [
-                    {"title": "Liked it"},
-                    {"title": "Hm... yes..."},
-                    {"title": "It was Amazing"},
-                    {"title": "Sensational, great week and Project", "isRight": true}
+                    {"title": "Platão"},
+                    {"title": "Galileu Galilei"},
+                    {"title": "Descartes", "isRight": true},
+                    {"title": "Sócrates"}
+                ]
+            },
+            {
+                "title": "De onde é a invenção do chuveiro elétrico?",
+                "answers": [
+                    {"title": "França"},
+                    {"title": " Inglaterra"},
+                    {"title": "Brasil", "isRight": true},
+                    {"title": "Austrália"}
+                ]
+            },
+            {
+                "title": "Quais o menor e o maior país do mundo?",
+                "answers": [
+                    {"title": "Vaticano e Rússia", "isRight": true},
+                    {"title": " Nauru e China"},
+                    {"title": "Mônaco e Canadá"},
+                    {"title": "Malta e Estados Unidos"}
+                ]
+            },
+            {
+                "title": "Qual o nome do presidente do Brasil que ficou conhecido como Jango?",
+                "answers": [
+                    {"title": "Jânio Quadros"},
+                    {"title": "Getúlio Vargas"},
+                    {"title": "João Figueiredo"},
+                    {"title": "João Goulart", "isRight": true}
+                ]
+            },
+            {
+                "title": "Qual o grupo em que todas as palavras foram escritas corretamente?",
+                "answers": [
+                    {"title": "Asterístico, beneficiente, meteorologia, entertido"},
+                    {"title": "Asterisco, beneficente, meteorologia, entretido", "isRight": true},
+                    {"title": "Asterisco, beneficente, metereologia, entretido"},
+                    {"title": "Asterisco, beneficiente, metereologia, entretido"}
+                ]
+            },
+            {
+                "title": "Qual o livro mais vendido no mundo a seguir à Bíblia?",
+                "answers": [
+                    {"title": "O Senhor dos Anéis"},
+                    {"title": "Dom Quixote", "isRight": true},
+                    {"title": "O Pequeno Príncipe"},
+                    {"title": " Ela, a Feiticeira"}
+                ]
+            },
+            {
+                "title": "Quantas casas decimais tem o número pi?",
+                "answers": [
+                    {"title": "Centenas"},
+                    {"title": "Infinitas"},
+                    {"title": "Vinte", "isRight": true},
+                    {"title": "Milhares"}
+                ]
+            },
+            {
+                "title": "Atualmente, quantos elementos químicos a tabela periódica possui?",
+                "answers": [
+                    {"title": "113"},
+                    {"title": "109"},
+                    {"title": "108"},
+                    {"title": "118", "isRight": true}
+                ]
+            },
+            {
+                "title": "Quais os países que têm a maior e a menor expectativa de vida do mundo?",
+                "answers": [
+                    {"title": " Japão e Serra Leoa", "isRight": true},
+                    {"title": "Austrália e Afeganistão"},
+                    {"title": "Itália e Chade"},
+                    {"title": "Brasil e Congo"}
                 ]
             }
         ]
@@ -28,25 +100,25 @@
     {
         "title": "Code Flutter",
         "image": "assets/images/laptop.png",
-        "questionAnswered": 1,
+        "questionAnswered": 0,
         "level": "easy",
         "questions": [
             {
-                "title": "Did you like Next Level Week?",
+                "title": "Sobre Django Framework, é INCORRETO afirmar que é um framework para",
                 "answers": [
-                    {"title": "Liked it"},
-                    {"title": "Hm... yes..."},
-                    {"title": "It was Amazing"},
-                    {"title": "Sensational, great week and Project", "isRight": true}
+                    {"title": "desenvolvimento web, e seus Models permitem uma abstração do banco de dados ao utilizar o objeto Queryset."},
+                    {"title": "desenvolvimento web, software livre e de código aberto."},
+                    {"title": "desenvolvimento web organizado em Models, Views e Controllers.", "isRight": true},
+                    {"title": "desenvolvimento web desenvolvido na linguagem Python."}
                 ]
             },
             {
-                "title": "Did you like Flutter and Dart?",
+                "title": "Sobre o framework Vue.js, assinale a alternativa correta.",
                 "answers": [
-                    {"title": "Liked it"},
-                    {"title": "Hm... yes..."},
-                    {"title": "It was Amazing"},
-                    {"title": "Sensational, great week and Project", "isRight": true}
+                    {"title": "Vue.js é um framework escrito em Java."},
+                    {"title": "Vue.js é considerado um framework de backend ( server side)."},
+                    {"title": "Vue.js possui estruturas que possibilitam utilizar condicionais, mas não possui estruturas de laço."},
+                    {"title": "Os templates do Vue.js são compostos por HTML válido que podem ser compilados por navegadores compatíveis com as especificações e também por compiladores HTML.", "isRight": true}
                 ]
             }
         ]
