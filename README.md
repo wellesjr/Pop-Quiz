@@ -6,7 +6,7 @@ Quiz com perguntas de conhecimentos gerais, criado com intuito de mostrar habild
 
 Um projeto clean, Ui/ Ux bem desenvilvido.
 Desenvolvimento em modulos
-![Screenshot](assets/images/sreenshot.png)
+![Screenshot](assets/images/screenshot.png)
 
 
 # Pop-Quiz
